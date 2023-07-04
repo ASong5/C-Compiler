@@ -13,3 +13,23 @@ The program has the ability to report both syntactic and semantic errors, as wel
 - Scanner/Lexical-Analyzer made with JFlex
 - Parser/Grammar construction made with CUP
 
+The user must specify the proper paths to these dependencies in the makefile. In
+particular, the CLASSPATH variable must be set properly. By default it is set to 
+"CLASSPATH=-cp /usr/share/java/cup.jar:."
+
+Once prerequistes have been installed, to build this program, run the make command in the same 
+directory as the makefile. Be sure to run the makefile for the TMSimulator as well if you are looking to compile the .cm program.
+
+# How to Run
+
+Once the project has been successfully built, it can be run using the command:
+
+java -cp /usr/share/java/cup.jar:. Main *.cm -[a,s,c]
+
+Where *.cm is the name of a C- file and the flags:
+-a performs syntactic analysis and outputs a .abs file (syntax tree),
+-s performs type checking and outputs a .sym file (symbol table),
+-c compiles the .cm file and outputs its corresponding assembly code as a .tm file
+    - to run the TM simulator, cd into the TMSimulator folder and run the command: 
+        ./tm *.cm 
+        Where *.cm is the path to the C- file.
