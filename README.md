@@ -1,5 +1,5 @@
 # C-Compiler
-Implementation of a compiler for a minified C language. Made by Andrew Song and Brendan Yawney as a project for CIS4650 at the University of Guelph.
+Implementation of a compiler for a minified C language (C-). Made by Andrew Song and Brendan Yawney as a project for CIS4650 at the University of Guelph.
 
 This compiler encompasses the three fundamental layers of the modern-day compiler:
 - Lexical and Syntactic Analysis (scanner and parser)
